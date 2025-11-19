@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .satir {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .kutu {
+            width: 200px;
+            height: 130px;
+            background: none;
+        }
+
+        .kutu img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .kontrol {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body onload="rastgeleIslemler()">
+
+    <div class="satir">
+        <div>
+            <div id="kutuUst" class="kutu">
+                <img id="ustResim" src="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="satir">
+
+        <div>
+            <div id="kutu1" class="kutu">
+                <img src="1.jpeg">
+            </div>
+            <div class="kontrol">
+                <button onclick="goster('kutu1')">Göster</button>
+                <button onclick="gizle('kutu1')">Gizle</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="kutu2" class="kutu">
+                <img src="2.jpeg">
+            </div>
+            <div class="kontrol">
+                <button onclick="goster('kutu2')">Göster</button>
+                <button onclick="gizle('kutu2')">Gizle</button>
+            </div>
+        </div>
+
+        <div>
+            <div id="kutu3" class="kutu">
+                <img src="3.jpeg">
+            </div>
+            <div class="kontrol">
+                <button onclick="goster('kutu3')">Göster</button>
+                <button onclick="gizle('kutu3')">Gizle</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function goster(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function gizle(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        function rastgeleIslemler() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+            const rastgeleIndex = Math.floor(Math.random() * 10) + 1;
+            document.getElementById('ustResim').src = `${rastgeleIndex}.jpeg`;
+        }
+    </script>
+
+</body>
+
+</html>

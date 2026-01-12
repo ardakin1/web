@@ -4,7 +4,7 @@ Bu proje, React kullanılarak geliştirilmiş dinamik bir ülke bilgi rehberidir
 
 ## 👨‍🎓 Öğrenci Bilgileri
 - **Ad Soyad:** Zeki Arda Akın
-- **Numara:** [Öğrenci Numaranız]
+- **Numara:** 2230780007
 - **Ders:** BTE311 - Web Programcılığı
 
 ## 🚀 Proje Özellikleri (Final Kriterleri)
@@ -19,11 +19,6 @@ Bu proje, React kullanılarak geliştirilmiş dinamik bir ülke bilgi rehberidir
 - **API:** [REST Countries API](https://restcountries.com/)
 - **Stil:** Custom CSS (Dinamik arka planlar ve Responsive tasarım)
 
-## 💻 Kurulum ve Çalıştırma
-Projeyi yerel bilgisayarınızda çalıştırmak için:
-1. Depoyu indirin veya clone'layın.
-2. Terminale `npm install` yazarak paketleri yükleyin.
-3. `npm start` yazarak projeyi ayağa kaldırın.
 
-## 🔗 Canlı Uygulama Linki
-[GitHub Pages üzerindeki linkini buraya ekle (Örn: https://zekiardaakin.github.io/final/)]
+
+

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.9da7dd29.css",
+    "main.js": "./static/js/main.cdeaee14.js",
+    "static/js/453.3f5730af.chunk.js": "./static/js/453.3f5730af.chunk.js",
+    "static/media/Asya.png": "./static/media/Asya.31c8a84ca86ce843d9b7.png",
+    "static/media/Avrupa.png": "./static/media/Avrupa.77ef0be6c04badb5c6fa.png",
+    "static/media/Afrika.png": "./static/media/Afrika.d32514593cb95fb1710f.png",
+    "static/media/Okyonunsya.png": "./static/media/Okyonunsya.cb432af214666a6f115a.png",
+    "index.html": "./index.html",
+    "main.9da7dd29.css.map": "./static/css/main.9da7dd29.css.map",
+    "main.cdeaee14.js.map": "./static/js/main.cdeaee14.js.map",
+    "453.3f5730af.chunk.js.map": "./static/js/453.3f5730af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9da7dd29.css",
+    "static/js/main.cdeaee14.js"
+  ]
+}

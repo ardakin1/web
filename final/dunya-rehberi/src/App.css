@@ -1,0 +1,34 @@
+.App { text-align: center; font-family: Arial, sans-serif; }
+.app-header { background: #2c3e50; color: white; padding: 20px; }
+.asia { 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url("Asya.png"); 
+}
+.europe { 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url("Avrupa.png"); 
+}
+.africa { 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url("Afrika.png");
+}
+
+.americas { 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url("Afrika.png");
+}
+.oceania { 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url("Okyonunsya.png");
+}
+.content-area {
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+.country-card { 
+  background: white; border-radius: 10px; padding: 20px; 
+  display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.error-msg { color: red; font-weight: bold; }
+.app-footer { padding: 20px; border-top: 1px solid #eee; font-size: 0.9em; }

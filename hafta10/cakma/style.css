@@ -1,0 +1,138 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #2c3e50; 
+  color: #ecf0f1;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+h2 {
+    color: #f1c40f;
+}
+
+.dice {
+  font-size: 7rem;
+  margin: 5px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.roll-animation {
+  animation-name: roll;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(720deg) rotateX(720deg);
+  }
+}
+
+button {
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d4ac0d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+li {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #34495e; 
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #7f8c8d;
+}
+
+li span {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+/* --- DÜZELTİLEN KISIM: TABLOYU SABİTLEME --- */
+.legend-container {
+    position: fixed; /* ARTIK SABİT! Ekran kayınca oynamaz. */
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: #34495e;
+    border: 2px solid #f1c40f;
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    text-align: left;
+    z-index: 1000; /* Diğer şeylerin üstünde dursun */
+}
+
+.legend-container h3 {
+    text-align: center;
+    color: #f1c40f;
+    margin-top: 0;
+    border-bottom: 1px solid #7f8c8d;
+    padding-bottom: 10px;
+}
+
+.legend-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: none; /* Genel ul ayarını eziyoruz */
+}
+
+.legend-container li {
+    font-size: 1.1rem;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus { color: #2ecc71; font-weight: bold; }
+.minus { color: #e74c3c; font-weight: bold; }
+
+/* Mobil Ayarı */
+@media (max-width: 900px) {
+    .legend-container {
+        position: relative; /* Mobilde sabit olmasın, yukarı çıksın */
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 80%;
+        margin: 20px auto;
+        z-index: 1;
+    }
+}
